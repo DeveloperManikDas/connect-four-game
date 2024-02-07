@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+}
+
+.board {
+    width: 356px;
+    height: 305px;
+    display: grid;
+    grid-template-rows: repeat(6, 50px);
+    grid-template-columns: repeat(7, 50px);
+    gap: 1px;
+    border: 2px solid;
+}
+
+.board div {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+div .player1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+div .player2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: blue;
+}
